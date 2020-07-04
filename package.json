@@ -1,0 +1,27 @@
+{
+  "name": "india_covid_19_tracker",
+  "version": "1.0.0",
+  "description": "covid-19-live-tracker for india",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharmasarswat/India_Covid_19_tracker.git"
+  },
+  "keywords": [
+    "covid-19-live-tracker",
+    "corona",
+    "html5",
+    "css3",
+    "javascript",
+    "api"
+  ],
+  "author": "Dharmendra Sarswat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dharmasarswat/India_Covid_19_tracker/issues"
+  },
+  "homepage": "https://github.com/dharmasarswat/India_Covid_19_tracker#readme"
+}

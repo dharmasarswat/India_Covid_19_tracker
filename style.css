@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background: rgb(194,10,72);
+    background: radial-gradient(circle, rgb(218, 15, 42) 50%, rgb(99, 32, 38) 100%);
+    
+}
+
+
+path{
+    fill: #ffff
+}
+
+.in{
+    stroke: #905921;
+}
+
+header{
+    width: 100%;
+    padding: 5px;
+    top: 10px;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #fff
+}
+
+.subtitle{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: transparent;
+    color: rgb(197, 146, 146)
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    z-index: 100;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin: 5px;   
+}
+
+.fade{
+    font-size: 10px;
+    letter-spacing: 1px;
+    color:darkgrey;
+}
+
+.active{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.death{
+    color: rgb(45, 119, 255);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.recover{
+    color: rgb(30, 255, 143);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+.on {
+    fill: rgb(155, 51, 51);
+    stroke: black;
+    stroke-width: 2;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 101; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+  
+
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: crimson;
+    color: white;
+}
+
+#model-header{
+    margin: 10px auto;
+    font-size: 28px;
+}
+
+.head-Container{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.head-Container div{
+    margin-bottom: 10px;
+}
+
+.modal-body {padding: 2px 16px;}
+
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: crimson;
+    color: white;
+}
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+#container{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+#slide{
+    width:100%;
+    height:100%;
+    transition: transform .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50px);
+    text-align: center;
+}
+
+svg{
+    transform: scale(.56);
+    overflow: visible;
+
+}
+
+span{
+    transition: all 1.5s ease;
+}
+
+.author{
+    text-decoration: underline;
+    color: snow;
+
+}
+
+
+@media (min-width: 540px){
+    svg{
+        transform: scale(.7);
+    }
+}
